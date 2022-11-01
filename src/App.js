@@ -3,6 +3,7 @@ import './style.css';
 import { ContextApiProvider } from './ContextApi';
 import ChildA from './ChildA';
 import { ContextApiMultipleProvider } from './ContextApiMultiple';
+import UseState from './UseState';
 
 export default function App() {
   return (
@@ -22,10 +23,14 @@ export default function App() {
       </div>
 
       <div>
-      <h1>Context Api example 2 with multiple data with use Context hooks</h1>
-      <ContextApiMultipleProvider>
+        <h1>Context Api example 2 with multiple data with use Context hooks</h1>
+        <ContextApiMultipleProvider>
           <ChildA />
         </ContextApiMultipleProvider>
+      </div>
+
+      <div>
+        <UseState />
       </div>
     </div>
   );
