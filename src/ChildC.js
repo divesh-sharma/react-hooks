@@ -1,5 +1,6 @@
 import React from 'react';
 import { data } from './ContextApi';
+import UseContext from "./UseContext";
 
 export default function ChildC() {
   return (
@@ -9,6 +10,7 @@ export default function ChildC() {
           return <p>Hi {data}</p>;
         }}
       </data.Consumer>
+      <UseContext />
     </div>
   );
 }

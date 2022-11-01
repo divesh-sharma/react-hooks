@@ -20,6 +20,13 @@ export default function App() {
           <ChildA />
         </ContextApiMultipleProvider>
       </div>
+
+      <div>
+      <h1>Context Api example 2 with multiple data with use Context hooks</h1>
+      <ContextApiMultipleProvider>
+          <ChildA />
+        </ContextApiMultipleProvider>
+      </div>
     </div>
   );
 }
