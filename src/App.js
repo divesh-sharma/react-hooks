@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import { ContextApiProducer } from './ContextApi';
+import ChildA from './ChildA';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <div>
+        <h1>Context Api Example 1 with single data</h1>
+        <ContextApiProducer>
+          <ChildA />
+        </ContextApiProducer>
+      </div>
     </div>
   );
 }
