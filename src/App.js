@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { ContextApiProvider } from './ContextApi';
 import ChildA from './ChildA';
 import { ContextApiMultipleProvider } from './ContextApiMultiple';
 import UseState from './UseState';
+import LifeCycle from './LifeCycle';
 
 export default function App() {
+  const [flag, setFlag] = useState(false);
   return (
     <div>
       <div>
@@ -32,6 +34,15 @@ export default function App() {
       <div>
         <UseState />
       </div>
+
+      {!flag ? (
+        <div>
+          <LifeCycle name="Divesh fjnkjn" />
+        </div>
+      ) : (
+        ''
+      )}
+      <button onClick={() => setFlag(true)}>Toggle Flag : {flag}</button>
     </div>
   );
 }
